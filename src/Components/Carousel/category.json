@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "",
+    "link":"/#fashion",
+    "name":"Fashion"
+  },
+  {
+    "icon":"",
+    "link":"/#mugs",
+    "name":"Mugs"
+  },
+  {
+    "icon":"",
+    "link":"/#stickers",
+    "name":"Stickers"
+  },
+  {
+    "icon":"",
+    "link":"/#pins",
+    "name":"Pins"
+  },
+  {
+    "icon":"",
+    "link":"/keychains",
+    "name":"Key Chains"
+  }
+]
