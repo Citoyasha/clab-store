@@ -2,25 +2,14 @@ import React from "react";
 import clb from "./Clab.png";
 import './carousel.css';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Box, CardContent, CardMedia, Typography, Card} from '@mui/material';
+import { Box, CardContent, CardMedia, Typography, Card} from '@mui/material';
 import {Spa} from '@mui/icons-material';
 import Sitems from './slide.json';
 import Citems from './category.json';
 
-
 function Slide(props) {
-    return (
-        <Paper style={{backgroundColor:"#ededed"}} sx={{ borderRadius:4 }} elevation={8}>
-            <h2>{props.item.name}</h2>
-            <img className="HImg" src={clb} alt="toolazytofetchitems"/>
-            <p>{props.item.description}</p>
-        </Paper>
-    )
-}
-
-function Slide2(props) {
   return (
-    <Card style={{height: '22vw'}}sx={{backgroundColor:'#f5f5f5',  display: 'flex' }}> 
+    <Card style={{height: '300px'}}sx={{backgroundColor:'#f5f5f5',  display: 'flex' }}> 
       <CardMedia
         component="img"
         sx={{ width: '80%' }}
@@ -54,7 +43,7 @@ export default function App() {
     return (
       <div className="row">
         <div className="column leftie">
-        <Card style={{backgroundColor:"#f5f5f5", height:"22vw"}} sx={{textAlign:'left' }}>
+        <Card style={{backgroundColor:"#f5f5f5", height:"300px"}} sx={{textAlign:'left' }}>
             <table>
               <tbody>
                {Citems.map( (item, i) => <Category key={i} item={item} /> )}
@@ -71,7 +60,7 @@ export default function App() {
           className="column rightie"
         >
             {
-                Sitems.map( (item, i) => <Slide2 key={i} item={item} /> )
+                Sitems.map( (item, i) => <Slide key={i} item={item} /> )
             }
         </Carousel>
       </div>

@@ -50,7 +50,6 @@ h3:hover {
 @media screen and (max-width: 800px) {
   .column.rightie, .column.leftie {
     width: 100%;
-    margin-left: 3%;
   }
 }
 
